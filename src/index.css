@@ -10,22 +10,26 @@
   --color-background-dark: #ff3d54; /*au rouge plus foncé*/
 
   /* Text Primary Colors */
-  --color-text-white: #ffffff;
+  --color-text-white: #ffffff; /*sur les fonds colorés*/
   --color-text-dark: #1f3f5b; /*pour les titres et textes sur fond blanc*/
 
   /* Secondary Colors */
-  --color-secondary: lightgrey;
-  --color-nightblue: #040348;
+  --color-secondary: lightgrey; /*pour certains textes secondaires*/
+  --color-nightblue: #040348; /*pour la section "State of the Art Infrastructure"*/
 
   /* Font Families */
-  --font-overpass: "Overpass", sans-serif;
-  --font-Overpass-light: "Overpass Light", sans-serif;
-  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-overpass: "Overpass", sans-serif; /*Police principale des titres | && | Police des boutons et navigation*/
+  /* ------------------------------ OR -------------------------------- */
+  --font-ubuntu: "Ubuntu", sans-serif; /*Police principale des titres | && | Police des boutons et navigation*/
+  --font-Overpass-light: "Overpass Light", sans-serif; /*Police du texte courant (paragraphes et descriptions)*/
 
   /* Spacings */
-  --spacing-small: 15px;
-  --spacing-medium: 30px;
-  --spacing-large: 80px;
+  --spacing-small: 20px; /*environ 15-20px entre les éléments rapprochés (comme entre les éléments de menu)*/
+  --spacing-small-sm: 15px; /*environ 15-20px entre les éléments rapprochés (comme entre les éléments de menu)*/
+  --spacing-medium: 40px; /*environ 30-40px entre les paragraphes et les sous-sections*/
+  --spacing-medium-m: 30px; /*environ 30-40px entre les paragraphes et les sous-sections*/
+  --spacing-large: 100px; /*environ 80-100px entre les grandes sections de la page*/
+  --spacing-large-l: 80px; /*environ 80-100px entre les grandes sections de la page*/
 
   /* Font Sizes */
   --font-size-nav: 16px;
