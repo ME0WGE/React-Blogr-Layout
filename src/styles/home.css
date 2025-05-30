@@ -1,0 +1,214 @@
+/* ===== SECTIONS GÉNÉRALES ===== */
+.section {
+  padding: var(--spacing-large) var(--spacing-large-l);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title {
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-secondary-32);
+  color: var(--color-text-dark);
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+  font-weight: 600;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-large);
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.feature {
+  margin-bottom: var(--spacing-medium);
+}
+
+.feature h3 {
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-tertiary-24);
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-small);
+  font-weight: 600;
+}
+
+.feature p {
+  font-family: var(--font-Overpass-light);
+  font-size: var(--font-size-text-16);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ===== SECTION FUTURE ===== */
+.future-section {
+  padding-top: var(--spacing-large-l);
+  padding-bottom: 0;
+  position: relative;
+  background-color: white;
+}
+
+.future-section .image-content {
+  position: relative;
+  overflow: visible;
+}
+
+.future-section img {
+  max-width: 130%;
+  transform: translateX(15%);
+}
+
+.future-section .section-content {
+  flex-direction: row-reverse;
+}
+
+/* ===== SECTION INFRASTRUCTURE ===== */
+.infrastructure-section {
+  background-color: var(--color-nightblue);
+  background-image: url("../assets/images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: left -120px center;
+  background-size: 55%;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin: var(--spacing-large) 0;
+  padding: 0;
+  position: relative;
+}
+
+.infrastructure-section .section-content {
+  padding: var(--spacing-medium) var(--spacing-large-l);
+}
+
+.infrastructure-section .text-content {
+  padding-right: var(--spacing-large);
+}
+
+.infrastructure-section h2 {
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-secondary-32);
+  color: var(--color-text-white);
+  margin-bottom: var(--spacing-medium);
+  font-weight: 600;
+  text-align: left;
+}
+
+.infrastructure-section p {
+  font-family: var(--font-Overpass-light);
+  font-size: var(--font-size-text-16);
+  color: var(--color-text-white);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.phones-image {
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+
+.phones-image img {
+  max-width: 120%;
+  transform: translateX(-10%);
+}
+
+/* ===== SECTION FEATURES ===== */
+.features-section {
+  background-color: white;
+  padding-bottom: var(--spacing-large-l);
+}
+
+.features-section .image-content img {
+  max-width: 130%;
+  transform: translateX(-15%);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .section-content {
+    flex-direction: column-reverse;
+    gap: var(--spacing-medium);
+  }
+
+  .reverse-wrap {
+    flex-direction: column;
+  }
+
+  .text-content {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 var(--spacing-medium);
+  }
+
+  .future-section img,
+  .features-section .image-content img {
+    max-width: 100%;
+    transform: none;
+  }
+
+  .phones-image {
+    margin-top: -80px;
+    margin-bottom: 0;
+  }
+
+  .phones-image img {
+    max-width: 100%;
+    transform: none;
+  }
+
+  .infrastructure-section {
+    background-position: top center;
+    background-size: 100%;
+  }
+
+  .infrastructure-section .text-content {
+    text-align: center;
+    padding: var(--spacing-medium) 0;
+  }
+
+  .infrastructure-section h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-medium) var(--spacing-medium-m);
+  }
+
+  .section-title {
+    font-size: var(--font-size-secondary-28);
+  }
+
+  .feature h3 {
+    font-size: var(--font-size-tertiary-20);
+  }
+
+  .infrastructure-section h2 {
+    font-size: var(--font-size-secondary-28);
+  }
+
+  .phones-image {
+    margin-top: -40px;
+  }
+}
