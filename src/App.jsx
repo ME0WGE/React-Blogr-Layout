@@ -19,7 +19,7 @@ function App() {
         </Route>
 
         {/* Page de Product par défaut */}
-        <Route path="/product" element={<Product />}>
+        <Route path="/product" element={<Layout />}>
           <Route index element={<Product />} />
           <Route path="product" element={<Product />} />
           <Route path="company" element={<Company />} />
@@ -27,7 +27,7 @@ function App() {
         </Route>
 
         {/* Page de Company par défaut */}
-        <Route path="/company" element={<Company />}>
+        <Route path="/company" element={<Layout />}>
           <Route index element={<Company />} />
           <Route path="product" element={<Product />} />
           <Route path="company" element={<Company />} />
@@ -35,7 +35,7 @@ function App() {
         </Route>
 
         {/* Page de Connect par défaut */}
-        <Route path="/connect" element={<Connect />}>
+        <Route path="/connect" element={<Layout />}>
           <Route index element={<Connect />} />
           <Route path="product" element={<Product />} />
           <Route path="company" element={<Company />} />

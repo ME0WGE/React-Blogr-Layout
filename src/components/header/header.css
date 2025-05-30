@@ -1,0 +1,183 @@
+.header-container {
+  background-image: url("../../assets/images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(
+      to left bottom,
+      var(--color-background-dark),
+      var(--color-background-light)
+    );
+  background-size: 175%;
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  width: 100%;
+  border-bottom-left-radius: 100px;
+  padding: var(--spacing-medium) var(--spacing-large-l);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-small) 0;
+}
+
+.navbar-content img {
+  height: 40px;
+  margin-right: var(--spacing-medium);
+}
+
+.navbar-content ul {
+  display: flex;
+  list-style: none;
+  margin-right: auto;
+}
+
+.navbar-content ul li {
+  margin-right: var(--spacing-small);
+  position: relative;
+}
+
+.navbar-content ul li a {
+  color: var(--color-text-white);
+  text-decoration: none;
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-nav-16);
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-content ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.navbar-content ul li a::after {
+  content: "▼";
+  font-size: 8px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.login button:first-child {
+  background: transparent;
+  border: none;
+  color: var(--color-text-white);
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-nav-16);
+  margin-right: var(--spacing-small);
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.login button:last-child {
+  background-color: var(--color-text-white);
+  border: none;
+  border-radius: 25px;
+  color: var(--color-background-dark);
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-btn);
+  font-weight: 600;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login button:last-child:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--color-background-dark);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: var(--spacing-large-l);
+  margin-bottom: var(--spacing-large-l);
+  flex: 1;
+}
+
+.header-content h1 {
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-primary-56);
+  color: var(--color-text-white);
+  font-weight: 600;
+  margin-bottom: var(--spacing-small);
+}
+
+.header-content p {
+  font-family: var(--font-Overpass-light);
+  font-size: var(--font-size-text-18);
+  color: var(--color-text-white);
+  margin-bottom: var(--spacing-medium);
+  font-weight: 300;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-small);
+}
+
+.btn-container button:first-child {
+  background-color: var(--color-text-white);
+  border: none;
+  border-radius: 25px;
+  color: var(--color-background-dark);
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-btn);
+  font-weight: 600;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-container button:first-child:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-container button:last-child {
+  background-color: transparent;
+  border: 1px solid var(--color-text-white);
+  border-radius: 25px;
+  color: var(--color-text-white);
+  font-family: var(--font-overpass);
+  font-size: var(--font-size-btn);
+  font-weight: 600;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-container button:last-child:hover {
+  background-color: var(--color-text-white);
+  color: var(--color-background-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    padding: var(--spacing-small) var(--spacing-medium-m);
+  }
+
+  .header-content h1 {
+    font-size: var(--font-size-primary-48);
+  }
+
+  .navbar-content ul {
+    display: none; /* For mobile menu implementation */
+  }
+}
