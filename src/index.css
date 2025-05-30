@@ -24,18 +24,29 @@
   --font-Overpass-light: "Overpass Light", sans-serif; /*Police du texte courant (paragraphes et descriptions)*/
 
   /* Spacings */
-  --spacing-small: 20px; /*environ 15-20px entre les éléments rapprochés (comme entre les éléments de menu)*/
-  --spacing-small-sm: 15px; /*environ 15-20px entre les éléments rapprochés (comme entre les éléments de menu)*/
-  --spacing-medium: 40px; /*environ 30-40px entre les paragraphes et les sous-sections*/
-  --spacing-medium-m: 30px; /*environ 30-40px entre les paragraphes et les sous-sections*/
-  --spacing-large: 100px; /*environ 80-100px entre les grandes sections de la page*/
-  --spacing-large-l: 80px; /*environ 80-100px entre les grandes sections de la page*/
+  --spacing-small: 20px; /*Espacement petit entre les éléments rapprochés (comme entre les éléments de menu)*/
+  --spacing-small-sm: 15px; /*Espacement petit entre les éléments rapprochés (comme entre les éléments de menu)*/
+  --spacing-medium: 40px; /*Espacement moyen entre les paragraphes et les sous-sections*/
+  --spacing-medium-m: 30px; /*Espacement moyen entre les paragraphes et les sous-sections*/
+  --spacing-large: 100px; /*Espacement large entre les grandes sections de la page*/
+  --spacing-large-l: 80px; /*Espacement large entre les grandes sections de la page*/
 
   /* Font Sizes */
-  --font-size-nav: 16px;
-  --font-size-body: 18px;
-  --font-size-title: 28px;
-  --font-size-heading: 56px;
+  /* Global text */
+  --font-size-text-18: 18px; /*Texte courant (paragraphes)*/
+  --font-size-text-16: 16px; /*Texte courant (paragraphes)*/
+  --font-size-primary-56: 56px; /*Titre principal ("A modern publishing platform")*/
+  --font-size-primary-48: 48px; /*Titre principal ("A modern publishing platform")*/
+  --font-size-secondary-32: 32px; /*Grands titres de section ("Designed for the future", etc.)*/
+  --font-size-secondary-28: 28px; /*Grands titres de section ("Designed for the future", etc.)*/
+  --font-size-tertiary-24: 24px; /*Sous-titres ("Introducing an extensible editor", etc.)*/
+  --font-size-tertiary-20: 20px; /*Sous-titres ("Introducing an extensible editor", etc.)*/
+  /* Miscalleneous */
+  --font-size-nav-16: 16px; /*Navigation*/
+  --font-size-nav-14: 14px; /*Navigation*/
+  --font-size-btn: 16px; /*Buttons*/
+  --font-size-logo-28: 28px; /*Logo*/
+  --font-size-logo-24: 24px; /*Logo*/
 }
 
 /* Reset global */
