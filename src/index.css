@@ -5,7 +5,7 @@
 :root {
   /* Primary Colors */
   --color-white: #ffffff; /*sur les fonds colorés*/
-  --color-dark: #25293a; /*pour le fond du footer et certaines sections*/
+  --color-dark: #24242c; /*pour le fond du footer et certaines sections*/
   --color-background-light: #ff8f70; /*du corail/saumon*/
   --color-background-dark: #ff3d54; /*au rouge plus foncé*/
 
