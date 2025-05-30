@@ -1,5 +1,9 @@
 import "../styles/home.css";
 
 export default function Home() {
-  return;
+  return (
+    <>
+      <h1>HOMEPAGE</h1>
+    </>
+  );
 }
